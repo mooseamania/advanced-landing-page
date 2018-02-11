@@ -3,12 +3,9 @@
 /*******************************************/
 
 body {
-  color: #f0efef;
-  font-size: 26px;
-  line-height: 1.4;
-  color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  background-color: black;
+  margin: 120px;
 }
 a {
   text-decoration: none;
@@ -21,110 +18,160 @@ a {
 
 /* Center the container */
 .container {
-  max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-.logo {
-  font-size: 48px;
-  font-weight: 800;
+.clearfix:after{
+  display: block;
+  content: " ";
+  clear: both;
 }
 
 header {
-  height: 700px;
-  background-image: url(../images/header_bg.jpg);
-  background-position: top center;
-  background-size:cover;
-  padding-top: 32px;
+  height: 50px;
+
 }
 
-header .logo {
-  color: #fff;
+#bar {
+  color: white;
+  display: inline-block;
+  float: right;
 }
-header h2 {
-  font-size: 48px;
+
+#bar .container {
+  display: inline-block;
+}
+
+#tagline {
+  height: 30px;
+  padding: 20px;
+  background-color: grey;
   text-align: center;
-  color: #fff;
-  margin: 120px 0 90px;
-  font-weight: 600;
+  border-top: 3px;
+  border-style: solid;
+  border-color: yellow;
+  margin-top: 30px;
 }
-.button {
+
+.testing {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+
+.logo {
+  font-size: 30px;
+  color: yellow;
+  float: left;
+}
+
+.smallnavbar {
+  font-size: 16px;
+  float: right;
+  margin: 10px;
+}
+
+.bignavbar {
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin: 10px;
+}
+
+
+main {
+  margin: 0 auto;
+  height: 500px;
+  background-image: url(../images/coworking.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+
+main .container {
+  float: right;
+  opacity: 0.8;
+  width: 350px;
+  background-color: white;
+  margin-top: 100px;
+  margin-right: 20px;
+  border-color: black;
+  border: 5px;
+}
+
+.match {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+p {
+  font-size: 15px;
+  padding: 15px;
+}
+
+.buttonyellow {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: yellow;
+  width: 250px;
+  margin: 20px 35px 20px 35px;
+  padding: 15px;
+}
+
+aside {
+  background-color: white;
+  display: block;
+}
+
+aside .container{
+  display: inline-block;
+  margin: 30px 50px 30px 50px;
+}
+
+
+.portion {
+  display: inline-block;
+  height: 70px;
+  width: 170px;
+  margin: 20px 50px 50px 50px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: grey;
+  padding: 10px;
+}
+
+h4.option {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.portion > p {
+  font-size: 16px;
+}
+
+
+.greybutton {
   border-radius: 5px;
+  background-color: grey;
   font-weight: 800;
   padding: 12px 0;
-  width: 280px;
+  width: 200px;
   box-sizing: border-box;
-  font-size: 28px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
-.yellow {
-  background: #f9e42e;
-  color: #033048;
-}
-.blue {
-  background: #033048;
-  color: #fff;
-  font-size: 24px;
-}
-#benefits {
-  padding: 100px 0 80px;
-}
-h3 {
-  color: #033048;
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-#benefits p, #benefits ul {
-  width: 600px;
-}
-#benefits ul {
-  list-style: disc;
-  margin: 30px 0 0 80px;
-}
-#testimonial {
-  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
-  padding: 70px 0 70px;
-  color: #fff;
-}
-blockquote {
-  font-size: 36px;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  width: 580px;
-  margin: 0 auto;
-}
-blockquote span {
-  font-weight: 600;
-  display: block;
-  font-style: normal;
-}
-aside {
-  background: #f9e42e;
-  padding: 30px;
-  text-align: center
-}
-footer {
-  background: #121212;
-  padding: 65px 0 45px;
-  text-align: center;
-}
-footer .logo {
-  color: #f9e42e;
-  margin-bottom: 68px;
-}
-footer ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 26px 75px;
-}
-footer p {
   font-size: 18px;
-  color: #fff;
-  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
+
+footer {
+  background: black;
+  padding: 65px 0 45px;
+  text-align: left;
+  color: white;
+
+}
